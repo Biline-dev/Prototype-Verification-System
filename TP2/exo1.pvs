@@ -1,0 +1,37 @@
+fibo: Theory
+
+BEGIN
+
+% Somme function:
+
+somme(n:nat) : RECURSIVE nat = if (n=0) then 0 else n+somme(n-1) ENDIF
+measure (lambda (n:nat) : n)
+% @QED thm_somme proved by linda-imene.boulmaali on Tue, 05 Dec 2023 10:23:38 GMT
+thm_somme : theorem forall (n:nat) : somme(n) = n*(n+1)/2
+
+
+% Somme Carre function
+
+sommecarre(n: nat) : RECURSIVE nat = if (n=0) then 0 else n*n + sommecarre(n-1)
+endif measure (lambda (n:nat): n)
+% @QED thm_sommecarre proved by linda-imene.boulmaali on Tue, 05 Dec 2023 10:26:14 GMT
+thm_sommecarre : THEOREM forall (n:nat) : sommecarre(n)= n*(n+1)*(2*n+1)/6
+
+
+% Fibonachi
+
+fib(n: nat): RECURSIVE nat = (if (n=0) or (n=1) then 1 else fib(n-1) + fib(n-2)
+endif) MEASURE (LAMBDA (n:nat) : n)
+% @QED thm_fibo proved by linda-imene.boulmaali on Fri, 08 Dec 2023 10:01:40 GMT
+thm_fibo: THEOREM forall (n, p: nat) : ((n>0) and (p>0)) IMPLIES fib(n+p) = fib(n)*fib(p) +  fib(n-1)*fib(p-1)
+% @QED thm_fibo_app1 proved by linda-imene.boulmaali on Fri, 08 Dec 2023 10:14:01 GMT
+thm_fibo_app1: THEOREM forall (n: nat) : (n>0) IMPLIES fib(2*n) = fib(n)*fib(n) + fib(n-1)*fib(n-1)
+% @QED thm_fibo_app2 proved by linda-imene.boulmaali on Fri, 08 Dec 2023 10:33:18 GMT
+thm_fibo_app2: THEOREM forall (n: nat) : (n>0) IMPLIES fib(2*n-1) = fib(n-1)*(2*fib(n) - fib(n-1))
+% @QED thm_fibo_app3 proved by linda-imene.boulmaali on Fri, 08 Dec 2023 10:37:36 GMT
+thm_fibo_app3: THEOREM forall (n: nat) : (n>0) IMPLIES fib(2*n+1) = fib(n)*(fib(n) +2*fib(n-1))
+% @QED thm_fibo_app3bis proved by linda-imene.boulmaali on Fri, 08 Dec 2023 10:41:27 GMT
+thm_fibo_app3bis: THEOREM forall (n: nat) : (n>0) IMPLIES fib(2*n+1) = fib(n)*(fib(n) +2*fib(n-1))
+
+
+END fibo

@@ -1,0 +1,38 @@
+tp_4: Theory
+
+
+BEGIN
+
+% Fusion of two lists
+
+fusion(l, p: list[nat]) : RECURSIVE list[nat] = if (l=null) then p else cons(car(l), fusion(cdr(l), p)) endif measure (lambda (l, p:list[nat]) : length(l))
+
+% @QED thm0 proved by linda-imene.boulmaali on Mon, 11 Dec 2023 10:06:33 GMT
+thm0 : THEOREM fusion(cons(2, cons(5, null)), cons(3, cons(7, cons(1, null)))) = (cons(2, cons(5, cons(3, cons(7, cons(1, null))))))
+% @QED thm1_2 proved by linda-imene.boulmaali on Mon, 11 Dec 2023 10:04:53 GMT
+thm1_2 : THEOREM FORALL (l :list[nat]) : fusion(l, null) = l
+% @QED thm1_3 proved by linda-imene.boulmaali on Mon, 11 Dec 2023 10:18:09 GMT
+thm1_3 : THEOREM FORALL (l, p: list[nat]) : ((p/=null) =>fusion(l, p)/=null)
+% @QED thm1_4 proved by linda-imene.boulmaali on Mon, 11 Dec 2023 10:21:43 GMT
+thm1_4 : THEOREM FORALL (l, p: list[nat]) : ((l/=null) => car(fusion(l, p)) = car(l))
+% @QED thm1_5 proved by linda-imene.boulmaali on Mon, 11 Dec 2023 10:40:16 GMT
+thm1_5: THEOREM FORALL (l, p, q: list[nat]) : fusion(fusion(l, p), q) = fusion(l, fusion(p,q))
+
+
+% Mirror Mirror
+
+miroir(l: list[nat]) :RECURSIVE list[nat] = if(l=null) then l else fusion(miroir(cdr(l)), cons(car(l), null)) ENDIF
+measure (lambda (l:list[nat]) : length(l))
+ 
+% @QED thm2_2 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 12:40:44 GMT
+thm2_2 : THEOREM FORALL (l, p:list[nat]) : miroir(fusion(l,p)) = fusion(miroir(p), miroir(l))
+% @QED thm2_3 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 12:54:23 GMT
+thm2_3 : THEOREM FORALL (l:list[nat]) : miroir(miroir(l)) = l
+% @QED thm2_4 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 15:31:00 GMT
+thm2_4 : THEOREM FORALL (l, p:list[nat]) : length(fusion(l, p)) = length(l) + length(p)
+% @QED thm2_5 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 15:53:31 GMT
+thm2_5 : THEOREM FORALL (l:list[nat]) : length(miroir(l)) = length(l)
+
+
+
+END tp_4

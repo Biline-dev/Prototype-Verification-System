@@ -1,0 +1,9 @@
+td5_exo10.thm_td4 is UNPROVED.
+
+  thm_td4 depends on the following definitions:
+
+    td5_exo10.comp
+
+    td5_exo10.inject1
+
+    td5_exo10.surject

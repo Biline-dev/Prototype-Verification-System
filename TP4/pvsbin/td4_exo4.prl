@@ -1,0 +1,14 @@
+%-------------------------------------------
+% @formula: thm1_2 
+% @theory: td4_exo4
+% @pvsfile: exo4.pvs
+% @status: ✅ proved
+%-------------------------------------------
+thm1_2 : PROOF
+(spread (induct "l")
+  ((then (skolem!)(grind))
+   (then (skolem!)(flatten)(skolem!)(expand "retire" -2)(lift-if)
+    (spread (case "x!1=cons1_var!1")
+     ((then (assert)(inst? -2))
+      (then (assert)(expand "member" -2)(inst? -1)))))))
+QED thm1_2

@@ -1,0 +1,21 @@
+tp1_exo1: Theory
+
+begin
+
+a, b, c, d: bool
+
+% @QED monthem1 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 14:58:00 GMT
+monthem1: theorem (a => (b => c)) => ((a => b) =>(a => c))
+
+% @QED monthem2 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 15:04:13 GMT
+monthem2: theorem (a => b) => ((a and c) => (b and c))
+
+% @QED monthem3 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 15:06:08 GMT
+monthem3: theorem ((a => c) or (b => c)) <=> ((a and b) => c)
+
+% @QED monthem4 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 15:08:42 GMT
+monthem4: theorem ((a =>b) and (c => d) and (not(b and d)) and (a or c)) => ((b <=> a) and (c <=> d))
+
+monthem5: theorem ((a =>b) and (c => d) or (not(b and d)) and (a or c)) => ((b <=> a) and (c <=> d))
+
+end tp1_exo1

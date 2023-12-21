@@ -1,0 +1,8 @@
+TCCs summary for theory td4_exo4
+
+	membre_TCC1.....................................................✅ proved              (0.329 s)
+	membre_TCC2.....................................................✅ proved              (0.424 s)
+	thm0_TCC1.......................................................❗ unfinished          (0.374 s)
+	retire_TCC1.....................................................✅ proved              (0.446 s)
+
+Theory td4_exo4 totals: 4 formulas, 4 attempted, 3 succeeded (1.573 s)

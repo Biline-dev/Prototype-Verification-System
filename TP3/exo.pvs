@@ -1,0 +1,19 @@
+td5_exo10: THEORY
+
+BEGIN
+A: TYPE
+
+comp(f:[A->A], g:[A->A]) : [A->A] = (LAMBDA (x:A) : g(f(x)))
+                      
+inject1(f:[A->A]) : bool = FORALL (x, y:A) : (f(x) = f(y) => x=y)
+
+
+surject(f:[A->A]) : bool = FORALL (z:A) : EXISTS(x: A) : f(x)=z
+
+% @QED thm_td4 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 17:10:11 GMT
+thm_td4 : THEOREM FORALL (f:[A ->A]) : (comp(f, comp(f, f))=f) => ((inject1(f)) <=> (surject(f)))
+
+% @QED monthm1 proved by linda-imene.boulmaali on Fri, 08 Dec 2023 11:20:40 GMT
+monthm1: THEOREM FORALL (f:[A->A]) :  (FORALL (x:A) : (f(f(f(x)))=f(x))) => ((inject1(f)) <=> (surject(f)))
+
+End td5_exo10

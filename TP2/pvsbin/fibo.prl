@@ -1,0 +1,85 @@
+%-------------------------------------------
+% @formula: thm_sommecarre 
+% @theory: fibo
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+thm_sommecarre : PROOF
+(spread (induct "n")
+  ((then (expand "sommecarre")(propax))
+   (then (skolem 1 "n")(flatten)(expand "sommecarre" 1)(replace -1)(assert))))
+QED thm_sommecarre
+
+
+%-------------------------------------------
+% @formula: thm_fibo_app2 
+% @theory: fibo
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+thm_fibo_app2 : PROOF
+(then (skolem 1 "n")(flatten)(lemma "thm_fibo")
+  (spread (inst -1 "n" "n-1")
+   ((then (assert)
+     (spread (case "n=1")
+      ((then (replace -1)(assert)(expand "fib" 1)(propax))
+       (then (assert)(replace -1)(grind)))))
+    (then (assert)))))
+QED thm_fibo_app2
+
+
+%-------------------------------------------
+% @formula: thm_fibo_app3 
+% @theory: fibo
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+thm_fibo_app3 : PROOF
+(then (skolem 1 "n")(flatten)(lemma "thm_fibo")(inst -1 "n" "n+1")(assert)(replace -1)(expand "fib" 1 4)(propax))
+QED thm_fibo_app3
+
+
+%-------------------------------------------
+% @formula: thm_fibo_app3bis 
+% @theory: fibo
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+thm_fibo_app3bis : PROOF
+(then (skolem 1 "n")(flatten)(lemma "thm_fibo_app2")(inst -1 "n+1")(assert)(replace -1)(grind))
+QED thm_fibo_app3bis
+
+
+%-------------------------------------------
+% @formula: thm_fibo_app1 
+% @theory: fibo
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+thm_fibo_app1 : PROOF
+(then (skolem 1 "n")(lemma "thm_fibo")(inst -1 "n" "n")(assert)(flatten)(assert))
+QED thm_fibo_app1
+
+
+%-------------------------------------------
+% @formula: thm_fibo 
+% @theory: fibo
+% @pvsfile: exo1.pvs
+% @status: ❗ unfinished
+%-------------------------------------------
+thm_fibo : PROOF
+(then (skolem!)(flatten)(assert)(postpone))
+QED thm_fibo
+
+
+%-------------------------------------------
+% @formula: thm_somme 
+% @theory: fibo
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+thm_somme : PROOF
+(spread (induct "n")
+  ((then (expand "somme")(propax))
+   (then (skolem 1 "n")(flatten)(expand "somme" 1)(replace -1)(assert))))
+QED thm_somme

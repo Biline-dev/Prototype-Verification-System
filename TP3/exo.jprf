@@ -1,0 +1,267 @@
+{
+ "td5_exo10.monthm1": [
+  {
+   "info": {
+    "theory": "td5_exo10",
+    "formula": "monthm1",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "9d6f4d7b5f0649349f71fe6606cb6a766b266aabf81ffb11c9f64c5df05bad31"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthm1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skolem 1 \"f\")",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(expand \"inject1\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(expand \"surject\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(skolem 1 \"y\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(inst 1 \"f(y)\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(inst -2 \"y\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(inst -1 \"f(f(y))\" \"y\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(expand \"surject\" -1)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(expand \"inject1\" 1)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(skolem 1 (\"x\" \"y\"))",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(inst-cp -1 \"x\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(skolem -2 \"u\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(inst -1 \"y\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(skolem -1 \"v\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(inst-cp -4 \"u\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(inst -4 \"v\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "td5_exo10.thm_td4": [
+  {
+   "info": {
+    "theory": "td5_exo10",
+    "formula": "thm_td4",
+    "status": "unchecked",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "9d6f4d7b5f0649349f71fe6606cb6a766b266aabf81ffb11c9f64c5df05bad31"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "thm_td4",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skolem 1 \"f\")",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(expand \"surject\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(expand \"inject1\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(skolem 1 \"z\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "td5_exo10.monthm": [
+  {
+   "info": {
+    "theory": "td5_exo10",
+    "formula": "monthm",
+    "status": "untried",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "9d6f4d7b5f0649349f71fe6606cb6a766b266aabf81ffb11c9f64c5df05bad31"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthm",
+    "type": "root",
+    "rules": []
+   }
+  }
+ ]
+}

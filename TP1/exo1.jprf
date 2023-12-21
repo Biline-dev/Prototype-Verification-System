@@ -1,0 +1,357 @@
+{
+ "tp1_exo1.monthem1": [
+  {
+   "info": {
+    "theory": "tp1_exo1",
+    "formula": "monthem1",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "11bbb02af879f98b06cb83c9b25336829437788cd030abc16f28d1d2873ec33e"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(propax)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(split)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "3",
+        "name": "(3)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "3",
+          "name": "(propax)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "tp1_exo1.monthem2": [
+  {
+   "info": {
+    "theory": "tp1_exo1",
+    "formula": "monthem2",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "11bbb02af879f98b06cb83c9b25336829437788cd030abc16f28d1d2873ec33e"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem2",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(assert)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "tp1_exo1.monthem3": [
+  {
+   "info": {
+    "theory": "tp1_exo1",
+    "formula": "monthem3",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "11bbb02af879f98b06cb83c9b25336829437788cd030abc16f28d1d2873ec33e"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem3",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(split)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.3",
+            "name": "(1.3)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.3",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.4",
+            "name": "(1.4)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.4",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "tp1_exo1.monthem4": [
+  {
+   "info": {
+    "theory": "tp1_exo1",
+    "formula": "monthem4",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "11bbb02af879f98b06cb83c9b25336829437788cd030abc16f28d1d2873ec33e"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem4",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(split)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "tp1_exo1.monthem5": [
+  {
+   "info": {
+    "theory": "tp1_exo1",
+    "formula": "monthem5",
+    "status": "untried",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "11bbb02af879f98b06cb83c9b25336829437788cd030abc16f28d1d2873ec33e"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem5",
+    "type": "root",
+    "rules": []
+   }
+  }
+ ]
+}

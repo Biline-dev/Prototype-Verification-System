@@ -1,0 +1,34 @@
+%-------------------------------------------
+% @formula: thm_td4 
+% @theory: td5_exo10
+% @pvsfile: exo.pvs
+% @status: ✨ untried
+%-------------------------------------------
+thm_td4 : PROOF
+(then (postpone))
+QED thm_td4
+
+
+%-------------------------------------------
+% @formula: monthm1 
+% @theory: td5_exo10
+% @pvsfile: exo.pvs
+% @status: ✅ proved
+%-------------------------------------------
+monthm1 : PROOF
+(then (skolem 1 "f")(flatten)
+  (spread (split)
+   ((then (flatten)(expand "inject1")(expand "surject")(skolem 1 "y")(inst 1 "f(y)")(inst -2 "y")(inst -1 "f(f(y))" "y")(assert))
+    (then (flatten)(expand "surject" -1)(expand "inject1" 1)(skolem 1 ("x" "y"))(flatten)(inst-cp -1 "x")(skolem -2 "u")(inst -1 "y")(skolem -1 "v")(inst-cp -4 "u")(inst -4 "v")(assert)))))
+QED monthm1
+
+
+%-------------------------------------------
+% @formula: monthm 
+% @theory: td5_exo10
+% @pvsfile: exo.pvs
+% @status: ✨ untried
+%-------------------------------------------
+monthm : PROOF
+(then (postpone))
+QED monthm

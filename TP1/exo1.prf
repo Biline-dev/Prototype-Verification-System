@@ -1,0 +1,38 @@
+(tp1_exo1
+ (monthem1 0
+  (monthem1-1 nil 3910258633
+   ("" (flatten)
+    (("" (split)
+      (("1" (propax) nil nil)
+       ("2" (split) (("1" (propax) nil nil) ("2" (propax) nil nil))
+        nil)
+       ("3" (propax) nil nil))
+      nil))
+    nil)
+   nil shostak))
+ (monthem2 0
+  (monthem2-1 nil 3910258942 ("" (flatten) (("" (assert) nil nil)) nil)
+   nil shostak))
+ (monthem3 0
+  (monthem3-1 nil 3910259090
+   ("" (split)
+    (("1" (flatten)
+      (("1" (split)
+        (("1" (propax) nil nil) ("2" (propax) nil nil)
+         ("3" (propax) nil nil) ("4" (propax) nil nil))
+        nil))
+      nil)
+     ("2" (flatten) (("2" (assert) nil nil)) nil))
+    nil)
+   nil shostak))
+ (monthem4 0
+  (monthem4-1 nil 3910259184
+   ("" (flatten)
+    (("" (split)
+      (("1" (split) (("1" (assert) nil nil) ("2" (assert) nil nil))
+        nil)
+       ("2" (assert) (("2" (assert) nil nil)) nil))
+      nil))
+    nil)
+   nil shostak)))
+

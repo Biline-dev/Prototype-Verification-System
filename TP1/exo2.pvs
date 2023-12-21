@@ -1,0 +1,24 @@
+tp_2 [A: Type]: Theory
+
+begin
+
+p, q : [A ->bool]
+
+r: [[A, A] ->bool]
+
+
+
+% @QED monthm1_a proved by linda-imene.boulmaali on Wed, 29 Nov 2023 15:23:27 GMT
+monthm1_a : THEOREM (FORALL (a: A) : FORALL (b: A) : r(a, b)) => (FORALL (a: A) :FORALL (b: A): r(b, a))
+
+% @QED monthm1_b proved by linda-imene.boulmaali on Wed, 29 Nov 2023 15:19:06 GMT
+monthm1_b : THEOREM (FORALL (a, b: A): r(a, b)) => (FORALL(a, b : A) : r(a, b))
+
+% @QED monthm2 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 15:37:16 GMT
+monthm2 :  THEOREM (FORALL (a: A) : (p(a) => q(a))) => ((FORALL (a: A) : p(a)) => (FORALL (a: A) : q(a)))
+
+% @QED monthm3 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 15:29:36 GMT
+monthm3 : THEOREM (FORALL (a: A) : FORALL (b: A) : r(a, b)) => (FORALL(a : A) : r(a, a))
+
+
+end tp_2

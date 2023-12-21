@@ -1,0 +1,183 @@
+(td4_exo4
+ (membre_TCC1 0
+  (membre_TCC1-1 nil 3911378132 ("" (subtype-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (list type-decl nil list_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil))
+   nil (membre subtype "td4_exo4.l" "(list_adt[nat].cons?)")))
+ (membre_TCC2 0
+  (membre_TCC2-1 nil 3911378132 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (list type-decl nil list_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (length def-decl "nat" list_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil
+   (membre termination
+    "td4_exo4.membre(td4_exo4.x, list_adt[nat].cdr(td4_exo4.l))"
+    "nil")))
+ (thm0_TCC1 0
+  (thm0_TCC1-1 nil 3911378132 ("" (subtype-tcc) nil nil) nil nil
+   (thm0 subtype "list_adt[real].cons(5, list_adt[real].null)"
+    "list[nat]")))
+ (thm0 0
+  (thm0-1 nil 3911378165
+   ("" (expand "membre")
+    (("" (expand "membre")
+      (("" (expand "membre") (("" (propax) nil nil)) nil)) nil))
+    nil)
+   ((membre def-decl "bool" td4_exo4 nil)) shostak))
+ (thm_1 0
+  (thm_1-1 nil 3911383912
+   ("" (induct "l")
+    (("1" (skolem!) (("1" (grind) nil nil)) nil)
+     ("2" (skolem!) (("2" (flatten) nil nil)) nil))
+    nil)
+   ((list_induction formula-decl nil list_adt nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (FALSE const-decl "bool" booleans nil)
+    (null adt-constructor-decl "(null?)" list_adt nil)
+    (null? adt-recognizer-decl "[list -> boolean]" list_adt nil)
+    (member def-decl "bool" list_props nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PRED type-eq-decl nil defined_types nil)
+    (list type-decl nil list_adt nil))
+   shostak))
+ (retire_TCC1 0
+  (retire_TCC2-1 nil 3911379101 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (list type-decl nil list_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (length def-decl "nat" list_props nil))
+   nil
+   (retire termination
+    "td4_exo4.retire(td4_exo4.x, list_adt[nat].cdr(td4_exo4.l))"
+    "nil")))
+ (thm1 0
+  (thm1-1 nil 3911379103 ("" (grind) nil nil)
+   ((retire def-decl "list[nat]" td4_exo4 nil)) shostak))
+ (thm2 0
+  (thm2-1 nil 3911379180 ("" (grind) nil nil)
+   ((retire def-decl "list[nat]" td4_exo4 nil)) shostak))
+ (thm1_2 0
+  (thm1_2-1 nil 3911383913
+   ("" (induct "l")
+    (("1" (skolem 1 "x")
+      (("1" (expand "retire")
+        (("1" (expand "member") (("1" (propax) nil nil)) nil)) nil))
+      nil)
+     ("2" (skolem 1 ("n" "l"))
+      (("2" (flatten)
+        (("2" (skolem 1 "x")
+          (("2" (expand "retire" -2)
+            (("2" (lift-if -2)
+              (("2" (inst?)
+                (("2" (case "x=n")
+                  (("1" (replace -1) (("1" (propax) nil nil)) nil)
+                   ("2" (assert)
+                    (("2" (expand "member" -1) (("2" (propax) nil nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((= const-decl "[T, T -> boolean]" equalities nil)
+    (list_induction formula-decl nil list_adt nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (retire def-decl "list[nat]" td4_exo4 nil)
+    (member def-decl "bool" list_props nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (every adt-def-decl "boolean" list_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (list type-decl nil list_adt nil))
+   shostak)))
+

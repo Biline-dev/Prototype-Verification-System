@@ -1,0 +1,71 @@
+%-------------------------------------------
+% @formula: monthem5 
+% @theory: tp1_exo1
+% @pvsfile: exo1.pvs
+% @status: ✨ untried
+%-------------------------------------------
+monthem5 : PROOF
+(then (postpone))
+QED monthem5
+
+
+%-------------------------------------------
+% @formula: monthem3 
+% @theory: tp1_exo1
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+monthem3 : PROOF
+(spread (split)
+  ((then (flatten)
+    (spread (split)
+     ((then (propax))
+      (then (propax))
+      (then (propax))
+      (then (propax)))))
+   (then (flatten)(assert))))
+QED monthem3
+
+
+%-------------------------------------------
+% @formula: monthem2 
+% @theory: tp1_exo1
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+monthem2 : PROOF
+(then (flatten)(assert))
+QED monthem2
+
+
+%-------------------------------------------
+% @formula: monthem1 
+% @theory: tp1_exo1
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+monthem1 : PROOF
+(then (flatten)
+  (spread (split)
+   ((then (propax))
+    (spread (split)
+     ((then (propax))
+      (then (propax))))
+    (then (propax)))))
+QED monthem1
+
+
+%-------------------------------------------
+% @formula: monthem4 
+% @theory: tp1_exo1
+% @pvsfile: exo1.pvs
+% @status: ✅ proved
+%-------------------------------------------
+monthem4 : PROOF
+(then (flatten)
+  (spread (split)
+   ((spread (split)
+     ((then (assert))
+      (then (assert))))
+    (then (assert)(assert)))))
+QED monthem4

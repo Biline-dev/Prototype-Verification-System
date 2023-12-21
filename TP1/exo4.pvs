@@ -1,0 +1,30 @@
+td1_exo4 : Theory
+
+    BEGIN
+
+        A: TYPE
+        B: TYPE+ 
+
+        p, q : [ A -> bool]
+        
+        r : [B -> bool]
+        c : bool
+
+        k : A
+
+        % @QED monthem1 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 10:54:40 GMT
+        monthem1: THEOREM (exists (a: A): ((p(a) and q(a)))) =>((exists (a: A): p(a)) or (exists (a: A): q(a)))
+
+        % @QED monthem2 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 11:01:18 GMT
+        monthem2: THEOREM ((exists (a: A): p(a)) or (exists (a: A): q(a))) => (exists (a: A): (p(a) or q(a)))
+
+        % @QED monthem3 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 11:04:16 GMT
+        monthem3: THEOREM (FORALL (a: A): p(a)) => (not(exists (a: A): not p(a)))
+
+        %monthem4: THEOREM (exists (k: A): (p(k) or c)) <=> ((exists (a: A): p(a)) or c)
+
+        % @QED monthem5 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 15:49:47 GMT
+        monthem5: THEOREM (exists (b: B): (r(b) or c)) <=> ((exists (b: B): r(b)) or c)
+
+ 
+    END td1_exo4

@@ -1,0 +1,57 @@
+(td1_exo4
+ (monthem1 0
+  (monthem1-1 nil 3910243808
+   ("" (flatten)
+    (("" (skolem!)
+      (("" (inst?) (("" (inst?) (("" (assert) nil nil)) nil)) nil))
+      nil))
+    nil)
+   ((A type-decl nil td1_exo4 nil)) shostak))
+ (monthem2 0
+  (monthem2-1 nil 3910244200
+   ("" (flatten)
+    (("" (split)
+      (("1" (skolem!) (("1" (inst?) (("1" (assert) nil nil)) nil)) nil)
+       ("2" (skolem!) (("2" (inst?) (("2" (assert) nil nil)) nil))
+        nil))
+      nil))
+    nil)
+   ((A type-decl nil td1_exo4 nil)) shostak))
+ (monthem3 0
+  (monthem3-1 nil 3910244529
+   ("" (flatten) (("" (skolem!) (("" (inst?) nil nil)) nil)) nil)
+   ((A type-decl nil td1_exo4 nil)) shostak))
+ (monthem4 0
+  (monthem4-1 nil 3910244704
+   ("" (split)
+    (("1" (flatten)
+      (("1" (skolem!) (("1" (inst?) (("1" (assert) nil nil)) nil))
+        nil))
+      nil)
+     ("2" (flatten)
+      (("2" (split)
+        (("1" (skolem!) (("1" (inst?) (("1" (assert) nil nil)) nil))
+          nil)
+         ("2" (assert) (("2" (postpone) nil nil)) nil))
+        nil))
+      nil))
+    nil)
+   nil shostak))
+ (monthem5 0
+  (monthem5-1 nil 3910261673
+   ("" (split)
+    (("1" (flatten)
+      (("1" (skolem!)
+        (("1" (split) (("1" (inst?) nil nil) ("2" (propax) nil nil))
+          nil))
+        nil))
+      nil)
+     ("2" (flatten)
+      (("2" (split)
+        (("1" (skolem!) (("1" (inst?) (("1" (prop) nil nil)) nil)) nil)
+         ("2" (assert) nil nil))
+        nil))
+      nil))
+    nil)
+   ((B nonempty-type-decl nil td1_exo4 nil)) shostak)))
+

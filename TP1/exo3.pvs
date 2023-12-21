@@ -1,0 +1,21 @@
+td1_exo3 : THEORY
+  BEGIN 
+    
+
+    A: TYPE
+
+    p, q : [A -> bool]
+
+    % @QED monthem1 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 10:15:38 GMT
+    monthem1 : THEOREM (FORALL (x: A) : (p(x) and q(x))) => ((FORALL (x: A) : p(x)) and (FORALL (x: A): q(x)))
+
+    % @QED monthem2 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 10:19:22 GMT
+    monthem2: THEOREM ((FORALL (x: A): p(x)) and (FORALL (x: A): q(x))) => (FORALL (x: A): (p(x) and q(x)))
+
+    % @QED monthem3 proved by linda-imene.boulmaali on Wed, 29 Nov 2023 10:34:59 GMT
+    monthem3: THEOREM (EXISTS (x: A): p(x)) => (not (FORALL (x: A) : (not p(x))))
+
+   
+
+
+  END td1_exo3

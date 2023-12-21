@@ -1,0 +1,27 @@
+td4_exo4 : Theory
+
+BEGIN
+
+membre(x : [nat], l: list[nat]) : RECURSIVE bool = if(l=null) then false  else  if (x=car(l)) then true        
+                                                                                else membre(x, cdr(l)) endif  
+                                                                                endif measure (lambda (x : [nat], l: list[nat]) : length(l))
+% @QED thm0 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 13:58:26 GMT
+thm0 : THEOREM membre(10, cons(2, cons(5, null))) = false
+% @QED thm_1 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 16:32:17 GMT
+thm_1 : THEOREM FORALL (x: nat, l:list[nat]) : member(x, null) = false
+
+
+
+retire(x : nat, l: list[nat]) : RECURSIVE list[nat] = if(l=null) then l  else if (x=car(l)) then  retire(x, cdr(l))
+                                                                                else cons(car(l), retire(x, cdr(l))) endif  
+                                                                                endif measure (lambda (x : [nat], l: list[nat]) : length(l))
+                                                                                    
+% @QED thm1 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 14:11:49 GMT
+thm1 : THEOREM retire(10, cons(2, cons(5, null))) = cons(2, cons(5, null))
+% @QED thm2 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 14:13:07 GMT
+thm2 : THEOREM retire(2, cons(2, cons(5, null))) = cons(5, null)
+% @QED thm1_2 proved by linda-imene.boulmaali on Tue, 12 Dec 2023 16:14:41 GMT
+thm1_2: THEOREM FORALL (x: nat, l:list[nat]) : not(member(x, retire(x, l)))
+
+
+END td4_exo4

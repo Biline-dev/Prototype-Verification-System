@@ -1,0 +1,394 @@
+{
+ "td1_exo4.monthem1": [
+  {
+   "info": {
+    "theory": "td1_exo4",
+    "formula": "monthem1",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "b03fc7b0c397df20d146b9b781748c316aeb443da3da19009d1b7efb9a169a52"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(skolem!)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst?)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst?)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(assert)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "td1_exo4.monthem2": [
+  {
+   "info": {
+    "theory": "td1_exo4",
+    "formula": "monthem2",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "b03fc7b0c397df20d146b9b781748c316aeb443da3da19009d1b7efb9a169a52"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem2",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "td1_exo4.monthem3": [
+  {
+   "info": {
+    "theory": "td1_exo4",
+    "formula": "monthem3",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "1ad6ea0e5efb59029a53038c2cc4554987eddca37c55499b19c0dd09e5ecf94d"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem3",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(skolem!)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst?)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "td1_exo4.monthem4": [
+  {
+   "info": {
+    "theory": "td1_exo4",
+    "formula": "monthem4",
+    "status": "untried",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "7e287931963b3a078389a333b70b698ef0f345dd23b221b429bafaddcbd0d5d7"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem4",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(skolem!)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(inst?)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "td1_exo4.monthem5": [
+  {
+   "info": {
+    "theory": "td1_exo4",
+    "formula": "monthem5",
+    "status": "unchecked",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "efcd53498fbd025c6a8ca0e98bbb68736b9d2e2bfb4a03f423f77b1c7f837fb1"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem5",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(skolem!)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(inst?)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(prop)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

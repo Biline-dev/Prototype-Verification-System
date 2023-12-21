@@ -1,0 +1,351 @@
+{
+ "fib2.thm_fibo": [
+  {
+   "info": {
+    "theory": "fib2",
+    "formula": "thm_fibo",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "a73784fbf16fab63cbeb54c58f0bb2a21d72556c14d8ca265da1c4dd32004ce3"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "thm_fibo",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(induct \"n\")",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(skolem 1 \"n\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(skolem 1 \"p\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(inst -1 \"p+1\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(case \"n=0\")",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(replace -1)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(replace -1)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(expand \"fib\" 1 (1 2 4))",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.1",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.2",
+              "name": "(replace -1)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.2",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.2",
+              "name": "(expand \"fib\" 2 (4 5))",
+              "type": "proof-command",
+              "rules": []
+             },
+             {
+              "branch": "2.2",
+              "name": "(assert)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "3",
+        "name": "(3)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "3",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "3",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "3",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "3",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "4",
+        "name": "(4)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "4",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "4",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "4",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "4",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "4",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "fib2.thm_fibo_app1": [
+  {
+   "info": {
+    "theory": "fib2",
+    "formula": "thm_fibo_app1",
+    "status": "unfinished",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "a73784fbf16fab63cbeb54c58f0bb2a21d72556c14d8ca265da1c4dd32004ce3"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "thm_fibo_app1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skolem 1 \"n\")",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(lemma \"thm_fibo\")",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst -1 \"n\" \"n\")",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(assert)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(case \"n=0\")",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(replace -1)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(inst -1 \"n\" \"n\")",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(replace -1)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(expand \"fib\")",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

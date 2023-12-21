@@ -1,0 +1,197 @@
+{
+ "td1_exo3.monthem1": [
+  {
+   "info": {
+    "theory": "td1_exo3",
+    "formula": "monthem1",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "15298d7602655d70dc2bc9d54543e458fe26e089efccc7b5bd6a19c721d30e4e"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(skolem!)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "td1_exo3.monthem2": [
+  {
+   "info": {
+    "theory": "td1_exo3",
+    "formula": "monthem2",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "15298d7602655d70dc2bc9d54543e458fe26e089efccc7b5bd6a19c721d30e4e"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem2",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(skolem!)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(inst?)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "td1_exo3.monthem3": [
+  {
+   "info": {
+    "theory": "td1_exo3",
+    "formula": "monthem3",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "15298d7602655d70dc2bc9d54543e458fe26e089efccc7b5bd6a19c721d30e4e"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthem3",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(skolem!)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst? -2)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ]
+}

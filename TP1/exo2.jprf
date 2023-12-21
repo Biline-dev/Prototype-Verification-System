@@ -1,0 +1,156 @@
+{
+ "tp_2.monthm1_a": [
+  {
+   "info": {
+    "theory": "tp_2",
+    "formula": "monthm1_a",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "56347c93e2e62e4e9756072a1b1eac345987416a738c6ca208da207e814041e0"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthm1_a",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(skolem!)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(skolem!)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst?)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "tp_2.monthm2": [
+  {
+   "info": {
+    "theory": "tp_2",
+    "formula": "monthm2",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "56347c93e2e62e4e9756072a1b1eac345987416a738c6ca208da207e814041e0"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthm2",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(skolem!)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst?)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(assert)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst?)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "tp_2.monthm1_b": [
+  {
+   "info": {
+    "theory": "tp_2",
+    "formula": "monthm1_b",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "56347c93e2e62e4e9756072a1b1eac345987416a738c6ca208da207e814041e0"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthm1_b",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "tp_2.monthm3": [
+  {
+   "info": {
+    "theory": "tp_2",
+    "formula": "monthm3",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "56347c93e2e62e4e9756072a1b1eac345987416a738c6ca208da207e814041e0"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "monthm3",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(skolem!)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst?)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ]
+}

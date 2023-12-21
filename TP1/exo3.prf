@@ -1,0 +1,28 @@
+(td1_exo3
+ (monthem1 0
+  (monthem1-1 nil 3910241504
+   ("" (flatten)
+    (("" (split)
+      (("1" (skolem!) (("1" (inst?) (("1" (assert) nil nil)) nil)) nil)
+       ("2" (skolem!) (("2" (inst?) (("2" (assert) nil nil)) nil))
+        nil))
+      nil))
+    nil)
+   ((A type-decl nil td1_exo3 nil)) shostak))
+ (monthem2 0
+  (monthem2-1 nil 3910241950
+   ("" (flatten)
+    (("" (skolem!)
+      (("" (split)
+        (("1" (inst?) nil nil)
+         ("2" (inst?) (("2" (assert) (("2" (inst?) nil nil)) nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((A type-decl nil td1_exo3 nil)) shostak))
+ (monthem3 0
+  (monthem3-1 nil 3910242863
+   ("" (flatten) (("" (skolem!) (("" (inst? -2) nil nil)) nil)) nil)
+   ((A type-decl nil td1_exo3 nil)) shostak)))
+

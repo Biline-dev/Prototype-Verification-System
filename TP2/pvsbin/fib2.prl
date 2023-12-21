@@ -1,0 +1,9 @@
+%-------------------------------------------
+% @formula: thm_fibo_app3 
+% @theory: fib2
+% @pvsfile: exo.pvs
+% @status: ✨ untried
+%-------------------------------------------
+thm_fibo_app3 : PROOF
+(then (postpone))
+QED thm_fibo_app3

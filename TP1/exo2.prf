@@ -1,0 +1,22 @@
+(tp_2
+ (monthm1_a 0
+  (monthm1_a-1 nil 3910240221
+   ("" (flatten)
+    (("" (skolem!) (("" (skolem!) (("" (inst?) nil nil)) nil)) nil))
+    nil)
+   ((A formal-type-decl nil tp_2 nil)) shostak))
+ (monthm1_b 0
+  (monthm1_b-1 nil 3910259890 ("" (flatten) nil nil) nil shostak))
+ (monthm2 0
+  (monthm2-1 nil 3910240996
+   ("" (flatten)
+    (("" (skolem!)
+      (("" (inst?) (("" (assert) (("" (inst?) nil nil)) nil)) nil))
+      nil))
+    nil)
+   ((A formal-type-decl nil tp_2 nil)) shostak))
+ (monthm3 0
+  (monthm3-1 nil 3910260552
+   ("" (flatten) (("" (skolem!) (("" (inst?) nil nil)) nil)) nil)
+   ((A formal-type-decl nil tp_2 nil)) shostak)))
+

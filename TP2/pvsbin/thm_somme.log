@@ -1,0 +1,13 @@
+fibo.thm_somme is UNPROVED.
+
+  thm_somme depends on the following proved theorems:
+
+    naturalnumbers.nat_induction
+
+  thm_somme depends on the following definitions:
+
+    fibo.somme
+
+    notequal./=
+
+    reals.>=
